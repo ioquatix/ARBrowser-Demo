@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E1084EB1370FD0E00197AEC /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 7E1084EA1370FD0E00197AEC /* Models */; };
+		7E68E76613B9CE8B00AF5C31 /* ARMainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E68E76413B9CE8B00AF5C31 /* ARMainWindow.xib */; };
+		7E7E2A341370EA3100338606 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A331370EA3100338606 /* UIKit.framework */; };
+		7E7E2A361370EA3100338606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A351370EA3100338606 /* Foundation.framework */; };
+		7E7E2A3E1370EA3200338606 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E7E2A3C1370EA3200338606 /* InfoPlist.strings */; };
+		7E7E2A411370EA3200338606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7E2A401370EA3200338606 /* main.m */; };
+		7E7E2A6E1370EA4A00338606 /* libHITLabNZAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A591370EA4A00338606 /* libHITLabNZAR.a */; };
+		7E7E2A761370EC0100338606 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A751370EC0100338606 /* OpenGLES.framework */; };
+		7E7E2A7A1370EC2300338606 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A771370EC2300338606 /* CoreLocation.framework */; };
+		7E7E2A7B1370EC2300338606 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A781370EC2300338606 /* CoreMedia.framework */; };
+		7E7E2A7C1370EC2300338606 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A791370EC2300338606 /* CoreVideo.framework */; };
+		7E7E2A7E1370EC2D00338606 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A7D1370EC2D00338606 /* AVFoundation.framework */; };
+		7E7E2A811370EC4A00338606 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A801370EC4A00338606 /* CoreGraphics.framework */; };
+		7E7E2A831370EC8000338606 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7E2A821370EC8000338606 /* QuartzCore.framework */; };
+		7E7E2A9A1370FBC300338606 /* ARBrowserAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E7E2A851370FBC300338606 /* ARBrowserAppDelegate.mm */; };
+		7E7E2A9B1370FBC300338606 /* ARBrowserViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E7E2A881370FBC300338606 /* ARBrowserViewController.mm */; };
+		7EBB6E5213C5C61E0028A3E7 /* ARMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EBB6E5013C5C61E0028A3E7 /* ARMapViewController.xib */; };
+		7EBB6E5513C5C6290028A3E7 /* ARMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB6E5413C5C6290028A3E7 /* ARMapViewController.mm */; };
+		7EBB6E5713C5C6760028A3E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBB6E5613C5C6760028A3E7 /* MapKit.framework */; };
+		7EEAE9D114503D1300286695 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEAE9D014503D1300286695 /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E1084EA1370FD0E00197AEC /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = SOURCE_ROOT; };
+		7E68E76513B9CE8B00AF5C31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ARMainWindow.xib; sourceTree = "<group>"; };
+		7E7E2A2F1370EA3100338606 /* ARBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7E2A331370EA3100338606 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E7E2A351370EA3100338606 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E7E2A371370EA3100338606 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E7E2A3B1370EA3200338606 /* ARBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARBrowser-Info.plist"; sourceTree = "<group>"; };
+		7E7E2A3D1370EA3200338606 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E7E2A3F1370EA3200338606 /* ARBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		7E7E2A401370EA3200338606 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E7E2A591370EA4A00338606 /* libHITLabNZAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHITLabNZAR.a; sourceTree = "<group>"; };
+		7E7E2A751370EC0100338606 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7E7E2A771370EC2300338606 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7E7E2A781370EC2300338606 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7E7E2A791370EC2300338606 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7E7E2A7D1370EC2D00338606 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7E7E2A7F1370EC3A00338606 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E7E2A801370EC4A00338606 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E7E2A821370EC8000338606 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E7E2A841370FBC300338606 /* ARBrowserAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARBrowserAppDelegate.h; sourceTree = "<group>"; };
+		7E7E2A851370FBC300338606 /* ARBrowserAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARBrowserAppDelegate.mm; sourceTree = "<group>"; };
+		7E7E2A861370FBC300338606 /* ARBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARBrowserView.h; sourceTree = "<group>"; };
+		7E7E2A871370FBC300338606 /* ARBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARBrowserViewController.h; sourceTree = "<group>"; };
+		7E7E2A881370FBC300338606 /* ARBrowserViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARBrowserViewController.mm; sourceTree = "<group>"; };
+		7E7E2A891370FBC300338606 /* ARLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationController.h; sourceTree = "<group>"; };
+		7E7E2A8A1370FBC300338606 /* ARModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARModel.h; sourceTree = "<group>"; };
+		7E7E2A8B1370FBC300338606 /* ARVideoBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARVideoBackground.h; sourceTree = "<group>"; };
+		7E7E2A8C1370FBC300338606 /* ARVideoFrameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARVideoFrameController.h; sourceTree = "<group>"; };
+		7E7E2A8D1370FBC300338606 /* ARWorldLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARWorldLocation.h; sourceTree = "<group>"; };
+		7E7E2A8E1370FBC300338606 /* ARWorldPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARWorldPoint.h; sourceTree = "<group>"; };
+		7E7E2A8F1370FBC300338606 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		7E7E2A931370FBC300338606 /* Endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endian.h; sourceTree = "<group>"; };
+		7E7E2A941370FBC300338606 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		7E7E2A951370FBC300338606 /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
+		7E7E2A961370FBC300338606 /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		7E7E2A981370FBC300338606 /* Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transform.h; sourceTree = "<group>"; };
+		7E7E2A991370FBC300338606 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		7EBB6E5113C5C61E0028A3E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ARMapViewController.xib; sourceTree = "<group>"; };
+		7EBB6E5313C5C6290028A3E7 /* ARMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMapViewController.h; sourceTree = "<group>"; };
+		7EBB6E5413C5C6290028A3E7 /* ARMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARMapViewController.mm; sourceTree = "<group>"; };
+		7EBB6E5613C5C6760028A3E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7EEAE9D014503D1300286695 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E7E2A2C1370EA3100338606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EEAE9D114503D1300286695 /* CoreMotion.framework in Frameworks */,
+				7EBB6E5713C5C6760028A3E7 /* MapKit.framework in Frameworks */,
+				7E7E2A831370EC8000338606 /* QuartzCore.framework in Frameworks */,
+				7E7E2A811370EC4A00338606 /* CoreGraphics.framework in Frameworks */,
+				7E7E2A7E1370EC2D00338606 /* AVFoundation.framework in Frameworks */,
+				7E7E2A7A1370EC2300338606 /* CoreLocation.framework in Frameworks */,
+				7E7E2A7B1370EC2300338606 /* CoreMedia.framework in Frameworks */,
+				7E7E2A7C1370EC2300338606 /* CoreVideo.framework in Frameworks */,
+				7E7E2A761370EC0100338606 /* OpenGLES.framework in Frameworks */,
+				7E7E2A341370EA3100338606 /* UIKit.framework in Frameworks */,
+				7E7E2A361370EA3100338606 /* Foundation.framework in Frameworks */,
+				7E7E2A6E1370EA4A00338606 /* libHITLabNZAR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E7E2A241370EA3100338606 = {
+			isa = PBXGroup;
+			children = (
+				7E7E2A391370EA3100338606 /* ARBrowser */,
+				7E7E2A321370EA3100338606 /* Frameworks */,
+				7E7E2A301370EA3100338606 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E7E2A301370EA3100338606 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E7E2A2F1370EA3100338606 /* ARBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E7E2A321370EA3100338606 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E7E2A581370EA4A00338606 /* libHITLabNZAR */,
+				7EBB6E5613C5C6760028A3E7 /* MapKit.framework */,
+				7E7E2A821370EC8000338606 /* QuartzCore.framework */,
+				7E7E2A801370EC4A00338606 /* CoreGraphics.framework */,
+				7E7E2A7F1370EC3A00338606 /* CoreGraphics.framework */,
+				7E7E2A7D1370EC2D00338606 /* AVFoundation.framework */,
+				7E7E2A771370EC2300338606 /* CoreLocation.framework */,
+				7E7E2A781370EC2300338606 /* CoreMedia.framework */,
+				7E7E2A791370EC2300338606 /* CoreVideo.framework */,
+				7E7E2A751370EC0100338606 /* OpenGLES.framework */,
+				7E7E2A331370EA3100338606 /* UIKit.framework */,
+				7E7E2A351370EA3100338606 /* Foundation.framework */,
+				7E7E2A371370EA3100338606 /* CoreGraphics.framework */,
+				7EEAE9D014503D1300286695 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E7E2A391370EA3100338606 /* ARBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				7E1084EA1370FD0E00197AEC /* Models */,
+				7E7E2A3A1370EA3200338606 /* Supporting Files */,
+			);
+			path = ARBrowser;
+			sourceTree = "<group>";
+		};
+		7E7E2A3A1370EA3200338606 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E7E2A3B1370EA3200338606 /* ARBrowser-Info.plist */,
+				7E7E2A3C1370EA3200338606 /* InfoPlist.strings */,
+				7E7E2A3F1370EA3200338606 /* ARBrowser-Prefix.pch */,
+				7E7E2A401370EA3200338606 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E7E2A581370EA4A00338606 /* libHITLabNZAR */ = {
+			isa = PBXGroup;
+			children = (
+				7E7E2A591370EA4A00338606 /* libHITLabNZAR.a */,
+				7E7E2A5A1370EA4A00338606 /* source */,
+			);
+			path = libHITLabNZAR;
+			sourceTree = "<group>";
+		};
+		7E7E2A5A1370EA4A00338606 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				7E68E76413B9CE8B00AF5C31 /* ARMainWindow.xib */,
+				7E7E2A841370FBC300338606 /* ARBrowserAppDelegate.h */,
+				7E7E2A851370FBC300338606 /* ARBrowserAppDelegate.mm */,
+				7E7E2A861370FBC300338606 /* ARBrowserView.h */,
+				7E7E2A871370FBC300338606 /* ARBrowserViewController.h */,
+				7E7E2A881370FBC300338606 /* ARBrowserViewController.mm */,
+				7EBB6E5013C5C61E0028A3E7 /* ARMapViewController.xib */,
+				7EBB6E5313C5C6290028A3E7 /* ARMapViewController.h */,
+				7EBB6E5413C5C6290028A3E7 /* ARMapViewController.mm */,
+				7E7E2A891370FBC300338606 /* ARLocationController.h */,
+				7E7E2A8A1370FBC300338606 /* ARModel.h */,
+				7E7E2A8B1370FBC300338606 /* ARVideoBackground.h */,
+				7E7E2A8C1370FBC300338606 /* ARVideoFrameController.h */,
+				7E7E2A8D1370FBC300338606 /* ARWorldLocation.h */,
+				7E7E2A8E1370FBC300338606 /* ARWorldPoint.h */,
+				7E7E2A8F1370FBC300338606 /* EAGLView.h */,
+				7E7E2A931370FBC300338606 /* Endian.h */,
+				7E7E2A941370FBC300338606 /* Matrix.h */,
+				7E7E2A951370FBC300338606 /* Quaternion.h */,
+				7E7E2A961370FBC300338606 /* Texture2D.h */,
+				7E7E2A981370FBC300338606 /* Transform.h */,
+				7E7E2A991370FBC300338606 /* Vector.h */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E7E2A2E1370EA3100338606 /* ARBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E7E2A551370EA3200338606 /* Build configuration list for PBXNativeTarget "ARBrowser" */;
+			buildPhases = (
+				7E7E2A2B1370EA3100338606 /* Sources */,
+				7E7E2A2C1370EA3100338606 /* Frameworks */,
+				7E7E2A2D1370EA3100338606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARBrowser;
+			productName = ARBrowser;
+			productReference = 7E7E2A2F1370EA3100338606 /* ARBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E7E2A261370EA3100338606 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AR;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 7E7E2A291370EA3100338606 /* Build configuration list for PBXProject "ARBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E7E2A241370EA3100338606;
+			productRefGroup = 7E7E2A301370EA3100338606 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E7E2A2E1370EA3100338606 /* ARBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E7E2A2D1370EA3100338606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7E2A3E1370EA3200338606 /* InfoPlist.strings in Resources */,
+				7E1084EB1370FD0E00197AEC /* Models in Resources */,
+				7E68E76613B9CE8B00AF5C31 /* ARMainWindow.xib in Resources */,
+				7EBB6E5213C5C61E0028A3E7 /* ARMapViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E7E2A2B1370EA3100338606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7E2A411370EA3200338606 /* main.m in Sources */,
+				7E7E2A9A1370FBC300338606 /* ARBrowserAppDelegate.mm in Sources */,
+				7E7E2A9B1370FBC300338606 /* ARBrowserViewController.mm in Sources */,
+				7EBB6E5513C5C6290028A3E7 /* ARMapViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E68E76413B9CE8B00AF5C31 /* ARMainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E68E76513B9CE8B00AF5C31 /* en */,
+			);
+			name = ARMainWindow.xib;
+			sourceTree = "<group>";
+		};
+		7E7E2A3C1370EA3200338606 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E7E2A3D1370EA3200338606 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7EBB6E5013C5C61E0028A3E7 /* ARMapViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EBB6E5113C5C61E0028A3E7 /* en */,
+			);
+			name = ARMapViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E7E2A531370EA3200338606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E7E2A541370EA3200338606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E7E2A561370EA3200338606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARBrowser/ARBrowser-Prefix.pch";
+				INFOPLIST_FILE = "ARBrowser/ARBrowser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libHITLabNZAR\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E7E2A571370EA3200338606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARBrowser/ARBrowser-Prefix.pch";
+				INFOPLIST_FILE = "ARBrowser/ARBrowser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/libHITLabNZAR\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E7E2A291370EA3100338606 /* Build configuration list for PBXProject "ARBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7E2A531370EA3200338606 /* Debug */,
+				7E7E2A541370EA3200338606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E7E2A551370EA3200338606 /* Build configuration list for PBXNativeTarget "ARBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7E2A561370EA3200338606 /* Debug */,
+				7E7E2A571370EA3200338606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E7E2A261370EA3100338606 /* Project object */;
+}
