@@ -20,13 +20,14 @@
 /// Return a list of world points, e.g. instances of ARWorldPoint objects.
 - (NSArray*)worldPoints;
 
+@optional
 /// Returns a list of world points that will be rendered from a given point
 - (NSArray*)worldPointsFromLocation:(ARWorldLocation *)origin withinDistance:(float)distance;
 
 /// Called when an object is selected on screen by the user.
-- (void) browserView: (ARBrowserView*)view didSelect:(ARWorldPoint*)point;
+- (void)browserView: (ARBrowserView*)view didSelect:(ARWorldPoint*)point;
 
-- (float) browserView: (ARBrowserView*)view scaleFactorFor:(ARWorldPoint*)point atDistance:(float)distance;
+- (float)browserView: (ARBrowserView*)view scaleFactorFor:(ARWorldPoint*)point atDistance:(float)distance;
 
 /// Render things like grids, markers, etc:
 - (void) renderInLocalCoordinatesForBrowserView:(ARBrowserView *)view;

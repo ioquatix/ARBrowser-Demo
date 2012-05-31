@@ -113,57 +113,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00019"></a>00019 
 <a name="l00021"></a>00021 - (NSArray*)<a class="code" href="protocol_a_r_browser_view_delegate-p.html#a52ee75fc0a19b24f804419fc3ab6df43" title="Return a list of world points, e.g. instances of ARWorldPoint objects.">worldPoints</a>;
 <a name="l00022"></a>00022 
-<a name="l00024"></a>00024 - (NSArray*)worldPointsFromLocation:(ARWorldLocation *)origin withinDistance:(<span class="keywordtype">float</span>)distance;
-<a name="l00025"></a>00025 
-<a name="l00027"></a>00027 - (void) browserView: (<a class="code" href="interface_a_r_browser_view.html" title="The main augmented reality view, which combines the ARVideoBackground with the ARLocationController.">ARBrowserView</a>*)view didSelect:(ARWorldPoint*)point;
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029 - (float) browserView: (<a class="code" href="interface_a_r_browser_view.html" title="The main augmented reality view, which combines the ARVideoBackground with the ARLocationController.">ARBrowserView</a>*)view scaleFactorFor:(ARWorldPoint*)point atDistance:(<span class="keywordtype">float</span>)distance;
-<a name="l00030"></a>00030 
-<a name="l00032"></a>00032 - (void) renderInLocalCoordinatesForBrowserView:(<a class="code" href="interface_a_r_browser_view.html" title="The main augmented reality view, which combines the ARVideoBackground with the ARLocationController.">ARBrowserView</a> *)view;
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034 <span class="keyword">@end</span>
-<a name="l00035"></a>00035 
-<a name="l00037"></a>00037 <span class="keyword">struct </span>ARBrowserViewState;
-<a name="l00038"></a>00038 
-<a name="l00040"></a><a class="code" href="interface_a_r_browser_view.html">00040</a> <span class="keyword">@interface </span><a class="code" href="interface_a_r_browser_view.html" title="The main augmented reality view, which combines the ARVideoBackground with the ARLocationController.">ARBrowserView</a> : <a class="code" href="interface_e_a_g_l_view.html" title="Wraps the CAEAGLLayer from CoreAnimation into a convenient UIView subclass.">EAGLView</a> {
-<a name="l00041"></a>00041         <a class="code" href="interface_a_r_video_frame_controller.html" title="Provides simplea access to iPhone video camera in the form of ARVideoFrame data. This can then be pro...">ARVideoFrameController</a> * videoFrameController;
-<a name="l00042"></a>00042         <a class="code" href="interface_a_r_video_background.html" title="Provides an OpenGL based video background which can display ARVideoFrame data.">ARVideoBackground</a> * videoBackground;
-<a name="l00043"></a>00043         
-<a name="l00045"></a>00045         <span class="keyword">struct </span>ARBrowserViewState * state;
-<a name="l00046"></a>00046         
-<a name="l00047"></a><a class="code" href="interface_a_r_browser_view.html#a4831f23b6b057d032491050a2dd826be">00047</a>         <span class="keywordtype">float</span> <a class="code" href="interface_a_r_browser_view.html#a4831f23b6b057d032491050a2dd826be" title="Controls culling of near objects. Objects closer than this distance are not rendered.">minimumDistance</a>, <a class="code" href="interface_a_r_browser_view.html#a3828caf0a7d28ba8e9417088ce4e736c" title="Controls culling of distance objects. Objects further away than this are not rendered.">maximumDistance</a>;
-<a name="l00048"></a>00048         
-<a name="l00051"></a><a class="code" href="interface_a_r_browser_view.html#a7d1856b25014bdbb42e053808fed67b5">00051</a>         <span class="keywordtype">float</span> <a class="code" href="interface_a_r_browser_view.html#a7d1856b25014bdbb42e053808fed67b5" title="Objects closer than near distance will be scaled down in size, and vise versa for far distance...">nearDistance</a>, <a class="code" href="interface_a_r_browser_view.html#a24e7722ea5439f2b161939a91529643f" title="Objects further away than this size appear the same size.">farDistance</a>;
-<a name="l00052"></a>00052         
-<a name="l00053"></a><a class="code" href="interface_a_r_browser_view.html#a541177be5371872bc4153d8eb8805ff2">00053</a>         BOOL <a class="code" href="interface_a_r_browser_view.html#a541177be5371872bc4153d8eb8805ff2" title="Display a small on-screen compass.">displayRadar</a>, <a class="code" href="interface_a_r_browser_view.html#a767b94294f4358686e88d043198b9881" title="Display a background horizon grid.">displayGrid</a>;
-<a name="l00054"></a>00054         
-<a name="l00056"></a><a class="code" href="interface_a_r_browser_view.html#ab390eeb9f2a9ce554dbbea33227cb389">00056</a>         CGPoint <a class="code" href="interface_a_r_browser_view.html#ab390eeb9f2a9ce554dbbea33227cb389" title="The center of the radar on the screen.">radarCenter</a>;
-<a name="l00057"></a>00057 }
-<a name="l00058"></a>00058 
-<a name="l00060"></a><a class="code" href="interface_a_r_browser_view.html#ac71040f5d7529f5d1585f774524e6e48">00060</a> <span class="keyword">@property</span>(nonatomic,assign) id&lt;ARBrowserViewDelegate&gt; delegate;
-<a name="l00061"></a>00061 
-<a name="l00063"></a>00063 <span class="keyword">@property</span>(nonatomic,assign) <span class="keywordtype">float</span> minimumDistance;
-<a name="l00064"></a>00064 
-<a name="l00066"></a>00066 <span class="keyword">@property</span>(nonatomic,assign) <span class="keywordtype">float</span> maximumDistance;
-<a name="l00067"></a>00067 
-<a name="l00069"></a>00069 <span class="keyword">@property</span>(nonatomic,assign) <span class="keywordtype">float</span> nearDistance;
-<a name="l00070"></a>00070 
-<a name="l00072"></a>00072 <span class="keyword">@property</span>(nonatomic,assign) <span class="keywordtype">float</span> farDistance;
-<a name="l00073"></a>00073 
-<a name="l00075"></a>00075 <span class="keyword">@property</span>(assign) BOOL displayRadar;
-<a name="l00076"></a>00076 
-<a name="l00079"></a>00079 <span class="keyword">@property</span>(assign) CGPoint radarCenter;
-<a name="l00080"></a>00080 
-<a name="l00082"></a>00082 <span class="keyword">@property</span>(assign) BOOL displayGrid;
-<a name="l00083"></a>00083 
-<a name="l00085"></a><a class="code" href="interface_a_r_browser_view.html#ae447f7463a16ed129629a2f6c4d453b1">00085</a> <span class="keyword">@property</span>(nonatomic,retain) ARLocationController * locationController;
-<a name="l00086"></a>00086 
-<a name="l00087"></a>00087 <span class="keyword">@end</span>
+<a name="l00023"></a>00023 <span class="keyword">@optional</span>
+<a name="l00025"></a>00025 - (NSArray*)worldPointsFromLocation:(ARWorldLocation *)origin withinDistance:(<span class="keywordtype">float</span>)distance;
+<a name="l00026"></a>00026 
+<a name="l00028"></a>00028 - (void)browserView: (<a class="code" href="interface_a_r_browser_view.html" title="The main augmented reality view, which combines the ARVideoBackground with the ARLocationController.">ARBrowserView</a>*)view didSelect:(ARWorldPoint*)point;
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 - (float)browserView: (<a class="code" href="interface_a_r_browser_view.html" title="The main augmented reality view, which combines the ARVideoBackground with the ARLocationController.">ARBrowserView</a>*)view scaleFactorFor:(ARWorldPoint*)point atDistance:(<span class="keywordtype">float</span>)distance;
+<a name="l00031"></a>00031 
+<a name="l00033"></a>00033 - (void) renderInLocalCoordinatesForBrowserView:(<a class="code" href="interface_a_r_browser_view.html" title="The main augmented reality view, which combines the ARVideoBackground with the ARLocationController.">ARBrowserView</a> *)view;
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="keyword">@end</span>
+<a name="l00036"></a>00036 
+<a name="l00038"></a>00038 <span class="keyword">struct </span>ARBrowserViewState;
+<a name="l00039"></a>00039 
+<a name="l00041"></a><a class="code" href="interface_a_r_browser_view.html">00041</a> <span class="keyword">@interface </span><a class="code" href="interface_a_r_browser_view.html" title="The main augmented reality view, which combines the ARVideoBackground with the ARLocationController.">ARBrowserView</a> : <a class="code" href="interface_e_a_g_l_view.html" title="Wraps the CAEAGLLayer from CoreAnimation into a convenient UIView subclass.">EAGLView</a> {
+<a name="l00042"></a>00042         <a class="code" href="interface_a_r_video_frame_controller.html" title="Provides simplea access to iPhone video camera in the form of ARVideoFrame data. This can then be pro...">ARVideoFrameController</a> * videoFrameController;
+<a name="l00043"></a>00043         <a class="code" href="interface_a_r_video_background.html" title="Provides an OpenGL based video background which can display ARVideoFrame data.">ARVideoBackground</a> * videoBackground;
+<a name="l00044"></a>00044         
+<a name="l00046"></a>00046         <span class="keyword">struct </span>ARBrowserViewState * state;
+<a name="l00047"></a>00047         
+<a name="l00048"></a><a class="code" href="interface_a_r_browser_view.html#a4831f23b6b057d032491050a2dd826be">00048</a>         <span class="keywordtype">float</span> <a class="code" href="interface_a_r_browser_view.html#a4831f23b6b057d032491050a2dd826be" title="Controls culling of near objects. Objects closer than this distance are not rendered.">minimumDistance</a>, <a class="code" href="interface_a_r_browser_view.html#a3828caf0a7d28ba8e9417088ce4e736c" title="Controls culling of distance objects. Objects further away than this are not rendered.">maximumDistance</a>;
+<a name="l00049"></a>00049         
+<a name="l00052"></a><a class="code" href="interface_a_r_browser_view.html#a7d1856b25014bdbb42e053808fed67b5">00052</a>         <span class="keywordtype">float</span> <a class="code" href="interface_a_r_browser_view.html#a7d1856b25014bdbb42e053808fed67b5" title="Objects closer than near distance will be scaled down in size, and vise versa for far distance...">nearDistance</a>, <a class="code" href="interface_a_r_browser_view.html#a24e7722ea5439f2b161939a91529643f" title="Objects further away than this size appear the same size.">farDistance</a>;
+<a name="l00053"></a>00053         
+<a name="l00054"></a><a class="code" href="interface_a_r_browser_view.html#a541177be5371872bc4153d8eb8805ff2">00054</a>         BOOL <a class="code" href="interface_a_r_browser_view.html#a541177be5371872bc4153d8eb8805ff2" title="Display a small on-screen compass.">displayRadar</a>, <a class="code" href="interface_a_r_browser_view.html#a767b94294f4358686e88d043198b9881" title="Display a background horizon grid.">displayGrid</a>;
+<a name="l00055"></a>00055         
+<a name="l00057"></a><a class="code" href="interface_a_r_browser_view.html#ab390eeb9f2a9ce554dbbea33227cb389">00057</a>         CGPoint <a class="code" href="interface_a_r_browser_view.html#ab390eeb9f2a9ce554dbbea33227cb389" title="The center of the radar on the screen.">radarCenter</a>;
+<a name="l00058"></a>00058 }
+<a name="l00059"></a>00059 
+<a name="l00061"></a><a class="code" href="interface_a_r_browser_view.html#ac71040f5d7529f5d1585f774524e6e48">00061</a> <span class="keyword">@property</span>(nonatomic,assign) id&lt;ARBrowserViewDelegate&gt; delegate;
+<a name="l00062"></a>00062 
+<a name="l00064"></a>00064 <span class="keyword">@property</span>(nonatomic,assign) <span class="keywordtype">float</span> minimumDistance;
+<a name="l00065"></a>00065 
+<a name="l00067"></a>00067 <span class="keyword">@property</span>(nonatomic,assign) <span class="keywordtype">float</span> maximumDistance;
+<a name="l00068"></a>00068 
+<a name="l00070"></a>00070 <span class="keyword">@property</span>(nonatomic,assign) <span class="keywordtype">float</span> nearDistance;
+<a name="l00071"></a>00071 
+<a name="l00073"></a>00073 <span class="keyword">@property</span>(nonatomic,assign) <span class="keywordtype">float</span> farDistance;
+<a name="l00074"></a>00074 
+<a name="l00076"></a>00076 <span class="keyword">@property</span>(assign) BOOL displayRadar;
+<a name="l00077"></a>00077 
+<a name="l00080"></a>00080 <span class="keyword">@property</span>(assign) CGPoint radarCenter;
+<a name="l00081"></a>00081 
+<a name="l00083"></a>00083 <span class="keyword">@property</span>(assign) BOOL displayGrid;
+<a name="l00084"></a>00084 
+<a name="l00086"></a><a class="code" href="interface_a_r_browser_view.html#ae447f7463a16ed129629a2f6c4d453b1">00086</a> <span class="keyword">@property</span>(nonatomic,retain) ARLocationController * locationController;
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088 <span class="keyword">@end</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 31 2012 14:24:18 for HITLabNZ ARBrowser by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 1 2012 01:30:03 for HITLabNZ ARBrowser by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

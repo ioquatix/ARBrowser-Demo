@@ -6,7 +6,6 @@ var searchData=
   ['arbrowserviewcontroller',['ARBrowserViewController',['../interface_a_r_browser_view_controller.html',1,'']]],
   ['arbrowserviewdelegate_2dp',['ARBrowserViewDelegate-p',['../protocol_a_r_browser_view_delegate-p.html',1,'']]],
   ['arlocationcontroller',['ARLocationController',['../interface_a_r_location_controller.html',1,'']]],
-  ['armocklocationcontroller',['ARMockLocationController',['../interface_a_r_mock_location_controller.html',1,'']]],
   ['armodel',['ARModel',['../interface_a_r_model.html',1,'']]],
   ['arrenderable_2dp',['ARRenderable-p',['../protocol_a_r_renderable-p.html',1,'']]],
   ['arvideobackground',['ARVideoBackground',['../interface_a_r_video_background.html',1,'']]],
