@@ -32,7 +32,7 @@
 	// 2 Derenzy Pl
 	ARWorldPoint * derenzy = [ARWorldPoint new];
 	location = (CLLocationCoordinate2D){-43.516215, 172.554560};
-	[derenzy setCoordinate:location altitude:EARTH_RADIUS];
+	[derenzy setCoordinate:location altitude:0.0];
 	[derenzy setModel:billboardModel];
 	
 	// This name is used for debugging output.
@@ -47,7 +47,7 @@
 	ARWorldPoint * hitlab = [ARWorldPoint new];
 	location.latitude = -43.522190;
 	location.longitude = 172.583020;
-	[hitlab setCoordinate:location altitude:EARTH_RADIUS];
+	[hitlab setCoordinate:location altitude:0.0];
 	
 	[hitlab setModel:billboardModel];
 	//[hitlab setModel:coffeeCupModel];
@@ -61,7 +61,7 @@
 	ARWorldPoint * cuteCenter = [ARWorldPoint new];
 	location.latitude = 1.29231;
 	location.longitude = 103.775769;
-	[cuteCenter setCoordinate:location altitude:EARTH_RADIUS];
+	[cuteCenter setCoordinate:location altitude:0.0];
 	[cuteCenter setModel:coffeeCupModel];
 	[cuteCenter.metadata setObject:@"Cute Center" forKey:@"name"];
 	[cuteCenter.metadata setObject:@"Singapore" forKey:@"address"];
@@ -74,7 +74,7 @@
 		location.latitude = -43.516215 + ((double)i / 20000.0);
 		location.longitude = 172.554560;
 		
-		[testMarker setCoordinate:location altitude:EARTH_RADIUS];
+		[testMarker setCoordinate:location altitude:0.0];
 		[testMarker setModel:billboardModel];
 		
 		[worldPoints addObject:testMarker];

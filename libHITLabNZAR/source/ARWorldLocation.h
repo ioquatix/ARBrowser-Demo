@@ -13,8 +13,6 @@
 #import "Vector.h"
 #import "Matrix.h"
 
-const double EARTH_RADIUS = 6378.1 * 1000.0;
-
 typedef double ARLocationRadians;
 typedef double ARLocationAltitude;
 
@@ -35,7 +33,7 @@ CLLocationDistance calculateDistanceBetween(ARLocationCoordinate from, ARLocatio
 /// Convert a CLLocationCoordinate2D from degrees to an ARLocationCoordinate in radians:
 ARLocationCoordinate convertFromDegrees(CLLocationCoordinate2D location);
 
-/// A intrinsic location on the surface of a sphere.
+/// A location on the surface of the earth.
 /// Provides functionality to convert between spherical and cartesian coordinates.
 @interface ARWorldLocation : NSObject {
 	CLLocationCoordinate2D _coordinate;
@@ -79,5 +77,10 @@ ARLocationCoordinate convertFromDegrees(CLLocationCoordinate2D location);
 
 - (CLLocationDistance) sphericalDistanceFrom:(ARWorldLocation *)destination;
 - (CLLocationDistance) distanceFrom:(ARWorldLocation *)destination;
+
+- (void)setLocationByInterpolatingFrom:(ARWorldLocation*)from to:(ARWorldLocation*)to atTime:(float)time;
+
+// A helper that returns a unit vector pointing in the direction of the bearing.
+- (CGPoint) normalizedDirection;
 
 @end
